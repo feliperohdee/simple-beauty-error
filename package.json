@@ -1,10 +1,10 @@
 {
   "name": "smallorange-beauty-error",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Make errors beauty",
   "main": "index.js",
   "scripts": {
-  	"deploy": "npm version patch -m 'Bump %s' && git push origin master && npm publish"
+    "deploy": "npm version patch -m 'Bump %s' && git push origin master && npm publish"
   },
   "author": "Felipe Rohde",
   "license": "ISC",
