@@ -4,7 +4,7 @@
   "description": "Make errors beauty",
   "main": "index.js",
   "scripts": {
-  	"deploy": "npm run clean && npm run copy && npm run s3 && npm run updateLambda; npm run clean"
+  	"deploy": "npm version patch -m 'Bump %s' && git push origin master && npm publish"
   },
   "author": "Felipe Rohde",
   "license": "ISC",
