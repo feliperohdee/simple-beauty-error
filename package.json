@@ -1,0 +1,16 @@
+{
+  "name": "smallorange-beauty-error",
+  "version": "1.0.0",
+  "description": "Make errors beauty",
+  "main": "index.js",
+  "scripts": {
+  	"deploy": "npm run clean && npm run copy && npm run s3 && npm run updateLambda; npm run clean"
+  },
+  "author": "Felipe Rohde",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/feliperohdee/smallorange-cloudwatch-logger"
+  },
+  "homepage": "https://smallorange.co"
+}
