@@ -18,7 +18,6 @@ const beautify = (err, context = {}) => {
 	return {
 		name: err.name,
 		message: err.message,
-		code: err.status || err.code || err.statusCode || 500,
 		context,
 		stack: stringifyStack(err.stack)
 	};
