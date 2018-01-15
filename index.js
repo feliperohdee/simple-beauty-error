@@ -9,7 +9,7 @@ const beautify = (err, context = {}) => {
 		name: err.name,
 		message: err.message,
 		context,
-		stack: JSON.stringify(stackParser.parse(err), null, 2)
+		stack: stackParser.parse(err)
 	};
 };
 
