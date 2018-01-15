@@ -1,6 +1,6 @@
 {
   "name": "smallorange-beauty-error",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Make errors beauty",
   "main": "index.js",
   "scripts": {
