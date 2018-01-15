@@ -12,5 +12,8 @@
     "type": "git",
     "url": "https://github.com/feliperohdee/smallorange-cloudwatch-logger"
   },
-  "homepage": "https://smallorange.co"
+  "homepage": "https://smallorange.co",
+  "dependencies": {
+    "error-stack-parser": "^2.0.1"
+  }
 }

@@ -1,14 +1,4 @@
-const stringifyStack = x => {
-	return JSON.stringify(x)
-		.replace(/\"/g, '')
-		.replace(/\t/g, '')
-		.replace(/\\t/g, '')
-		.replace(/\s{2,}/g, '')
-		.replace(/\\s{2,}/g, '')
-		.replace(/\\n/g, '\n')
-		.split('\n')
-		.slice(1);
-};
+const stackParser = require('error-stack-parser');
 
 const beautify = (err, context = {}) => {
 	if(!(err instanceof Error)){
@@ -19,7 +9,7 @@ const beautify = (err, context = {}) => {
 		name: err.name,
 		message: err.message,
 		context,
-		stack: stringifyStack(err.stack)
+		stack: JSON.stringify(stackParser.parse(err), null, 2)
 	};
 };
 
