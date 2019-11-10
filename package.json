@@ -1,19 +1,22 @@
 {
-  "name": "smallorange-beauty-error",
-  "version": "1.0.6",
-  "description": "Make errors beauty",
-  "main": "index.js",
-  "scripts": {
-    "deploy": "npm version patch -m 'Bump %s' && git push origin master && npm publish"
-  },
-  "author": "Felipe Rohde",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/feliperohdee/smallorange-cloudwatch-logger"
-  },
-  "homepage": "https://smallorange.co",
-  "dependencies": {
-    "error-stack-parser": "^2.0.1"
-  }
+    "name": "simple-beauty-error",
+    "version": "1.0.0",
+    "description": "Make errors beauty",
+    "main": "index.js",
+    "scripts": {
+        "deploy": "npm version patch -m 'Bump %s' && git push origin master && npm publish",
+        "eslint": "eslint . --ext .js --config node_modules/eslint-config/index.js"
+    },
+    "author": "Felipe Rohde",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/feliperohdee/simple-beauty-error"
+    },
+    "dependencies": {
+        "error-stack-parser": "^2.0.4"
+    },
+    "devDependencies": {
+        "eslint": "^6.6.0"
+    }
 }
