@@ -1,6 +1,6 @@
 const stackParser = require('error-stack-parser');
 
-const beautify = (err, context = {}) => {
+module.exports = (err, context = {}, maxStack = 10) => {
 	if(!(err instanceof Error)){
 		err = new Error(err);
 	}
@@ -9,8 +9,7 @@ const beautify = (err, context = {}) => {
 		name: err.name,
 		message: err.message,
 		context,
-		stack: stackParser.parse(err)
+		stack: [].concat(stackParser.parse(err))
+			.slice(0, maxStack)
 	};
 };
-
-module.exports = beautify;
