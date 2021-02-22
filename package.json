@@ -9,14 +9,10 @@
     },
     "author": "Felipe Rohde",
     "license": "ISC",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/feliperohdee/simple-beauty-error"
-    },
     "dependencies": {
-        "error-stack-parser": "^2.0.4"
+        "error-stack-parser": "^2.0.6"
     },
     "devDependencies": {
-        "eslint": "^6.6.0"
+        "eslint": "^7.20.0"
     }
 }
